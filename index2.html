@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:v="urn:schemas-microsoft-com:vml">
+  <head>
+    <title>Sailing Tracker</title>
+    <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=iso-8859-1" />
+    <link rel="stylesheet" type="text/css" href="st.css" />
+<link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.2/themes/base/jquery-ui.css"/>
+
+    <script src="http://www.google.com/jsapi?key=ABQIAAAAMwvZ-U0zEvpvNHE8wTBJpBQtfYW8SV7S78aaaLMxlPbOV-AMRxTiM75JMdftYvjs0CWpjg-NScn7Zw" type="text/javascript"></* google api loader */</script>
+    <script type="text/javascript" src="js/polyline_encoder.js">/* polyline_encoder.js */</script>
+    <script type="text/javascript" src="img/markers/markers.js"></* markers.js */></script>
+    <script type="text/javascript" src="js/gpxplayer_lib.js">/* gpxplayer_lib.js */</script>
+    <script type="text/javascript" src="js/gpxplayer.js"></* gpxplayer.js */></script>
+  </head>
+  <body class="player">
+    <div id="tracks">
+      <div>
+	<h2>Tracks</h2>
+	<ol id="selectedtracks">
+	</ol>
+	<!--	  <a id="cleartracks" href="#">Clear track list.</a> -->
+      </div>
+<!--    <div>
+      <p class="notice"><b>Notice to users:</b> track names with non-ASCII (e.g. äöå) cause problems with the current code. I will fix manually any such tracks, but this means they might not show up immediately. -Heikki</p>
+    </div> -->
+
+      <div id="controls" style="display:none">
+	<button type="button" id="play">Play</button>
+	<select id="speed">
+	  <optgroup label="Speed">
+	    <option value="1">1x</option>
+	    <option value="2">2x</option>
+	    <option value="5">5x</option>
+	    <option selected="selected" value="10">10x</option>
+	    <option value="20">20x</option>
+	    <option value="50">50x</option>
+	    <option value="100">100x</option>
+	    <option value="200">200x</option>
+	    <option value="500">500x</option>
+	    <option value="1000">1000x</option>
+	  </optgroup>
+	</select>
+	<button type="button" id="stop">Stop</button>
+      </div>
+      <div>
+	<p id="othertracks" style="display:none">Other tracks form the same race:</p>
+	<p id="choosetrack">Choose a track:</p>
+	<ul id="tracklist">
+	</ul>
+      </div>
+      <div>
+	<p>Note: you can download the GPX file by right clicking on
+	the link and selecting <code>save</code>.</p>
+      </div>
+    </div>
+    
+    <div id="map">Loading map...</div>
+
+    <div id="playertime"></div>
+
+    <div id="time"><!-- time bar --></div>
+
+    <canvas id="speedgraph"></canvas>
+
+    <!-- <div id="tick">tick</div> -->
+    
+    <form id="addgpx">
+      <!-- todo -->
+    </form>
+
+    <div id="footer"><span id="copyright">Copyright &copy; 2009-2010 Heikki Vesalainen</span></div>
+  </body>
+</html>

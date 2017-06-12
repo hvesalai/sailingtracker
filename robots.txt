@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /tracks/
+Disallow: /js/
+Disallow: *.jar
+
+

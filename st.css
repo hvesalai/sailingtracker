@@ -1,0 +1,114 @@
+html {
+    background: /* #cce7e7 */ Gainsboro;
+    color: #113311; 
+    overflow-y: scroll;
+}
+
+body {
+    background: white;
+    width: 42em;
+    margin: 0.5em auto;
+    padding: 24pt;
+    border-top: 2px solid Crimson;
+}
+
+body.player {
+    width: 90%;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: georgia, helvetica, sans-serif;
+    clear: both;
+}
+
+h1 {
+    color: DeepSkyBlue;
+    font-variant: small-caps;
+}
+
+h2 {
+    color: DeepSkyBlue;
+    border-top: 1px solid DarkGray;
+    margin: 1em -20pt;
+    padding: 1em 20pt 0 24pt;
+}
+
+#map {
+    width: 60%;
+    height: 500px;
+    margin: 12pt 0;
+}
+
+.notice {
+    border: 1px solid red;
+    padding: 1em;
+    font-size: 110%;
+}
+
+.infoArea {
+    font-size: 80%;
+    color: white;
+    margin-top: -30px;
+    margin-left: 10px;
+}
+
+#speedgraph, #bearinggraph {
+    width: 60%;
+    height: 100px;
+    outline: 1px solid Gainsboro;
+}
+
+#time, #tracktime {
+    width: 60%;
+    margin: 12pt 0;
+}
+
+#tracks {
+    float: right;
+    width: 40%;
+    margin: 12pt 0;
+}
+
+#tracks div {
+    margin: 0 12pt;
+}
+
+#tracks h2 {
+    margin: 0;
+    padding: 0;
+    
+}
+
+#controls {
+    text-align: left;
+}
+
+#tracks ol {
+    padding: 0;
+    list-style-type: none;
+}
+#tracks ul {
+    padding: 0;
+    list-style-position: inside;
+}
+
+#tracklist li span {
+    display:block;
+    font-size: 80%;
+}
+
+li.follow {
+    font-weight: bold;
+}
+
+li.follow a.follow {
+    display: none;
+}
+
+#copyright {
+    color: DarkGray;
+}
+
+#footer {
+    clear: both;
+}
